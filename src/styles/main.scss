@@ -1,4 +1,5 @@
 @use 'variaveis';
+@use 'header';
 @use 'hero';
 @use 'plans';
 @use 'devices';
@@ -20,6 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -79,4 +81,8 @@ body {
     border-radius: 4px;
     margin-top: 2vw;
     margin-bottom: 8px;
+
+    &:hover {
+        background-color: lighten(#6421ff, 3%);
+    }
 }

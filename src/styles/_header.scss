@@ -1,0 +1,60 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$corDeFundo;
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        max-width: 80px;
+        width: 100%;
+    }
+
+    .button {
+        margin: 0;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 8px 14px;
+        letter-spacing: 1px;
+        height: 50px;
+        
+        &--assine {
+            background-color: #0063e5;
+
+            &:hover {
+                background-color: lighten(#0063e5, 3%);
+            }
+        }
+
+        &--entrar {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid variaveis.$corTextoSecundario;
+
+            &:hover {
+                background-color: variaveis.$corTextoSecundario;
+                color: variaveis.$corDeFundo;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            margin: 5px;
+        }
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
